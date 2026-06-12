@@ -25,11 +25,14 @@
 
 ## Skill Index
 
-| Skill | 适合解决什么问题 | Repository |
-| --- | --- | --- |
-| `seo-code-diagnostic` | 网站 SEO、技术 SEO、AdSense 审核相关的代码诊断 | [glassesmonkey/seo-code-diagnostic](https://github.com/glassesmonkey/seo-code-diagnostic) |
-| `ga4-gsc-growth-analysis` | 基于 GA4 / GSC 数据做增长分析、流量诊断和优化建议 | [Alex-giao/ga4-gsc-growth-analysis](https://github.com/Alex-giao/ga4-gsc-growth-analysis) |
-| `new-keyword-opportunity-evaluator` | 高召回评估新发现/上升趋势关键词的早期 SEO 机会 | [Alex-giao/new-keyword-opportunity-evaluator](https://github.com/Alex-giao/new-keyword-opportunity-evaluator) |
+| Skill | 适合解决什么问题 | Repository | Version |
+| --- | --- | --- | --- |
+| `seo-code-diagnostic` | 网站 SEO、技术 SEO、AdSense 审核相关的代码诊断 | [glassesmonkey/seo-code-diagnostic](https://github.com/glassesmonkey/seo-code-diagnostic) | - |
+| `ga4-gsc-growth-analysis` | 基于 GA4 / GSC 数据做增长分析、流量诊断和优化建议 | [Alex-giao/ga4-gsc-growth-analysis](https://github.com/Alex-giao/ga4-gsc-growth-analysis) | - |
+| `new-keyword-opportunity-evaluator` | 高召回评估新发现/上升趋势关键词的早期 SEO 机会 | [Alex-giao/new-keyword-opportunity-evaluator](https://github.com/Alex-giao/new-keyword-opportunity-evaluator) | - |
+| `seo-keyword-research` | 判断关键词是否值得围绕它新建 SEO 站点 | [Alex-giao/seo-keyword-research](https://github.com/Alex-giao/seo-keyword-research) | [`93edbfc`](https://github.com/Alex-giao/seo-keyword-research/commit/93edbfceb908009692cb46ba6cc9fbb8daed34bc) |
+| `web-access` | 在搜索、页面提取、浏览器自动化和 Chrome CDP 代理之间选择 web access 方案 | [Alex-giao/web-access](https://github.com/Alex-giao/web-access) | [`1b3a5e6`](https://github.com/Alex-giao/web-access/commit/1b3a5e63bb0b27c491e3947f8c9e6dfb26208210) |
+| `wechat-mp-article-list` | 手动登录微信公众平台后台后提取公众号文章列表 | [Alex-giao/wechat-mp-article-list](https://github.com/Alex-giao/wechat-mp-article-list) | [`b96b28e`](https://github.com/Alex-giao/wechat-mp-article-list/commit/b96b28e8429be594749072c21a1faa56f7c7fe45) |
 
 ---
 
@@ -87,12 +90,84 @@
 
 ---
 
+### `seo-keyword-research`
+
+> 面向“是否值得围绕某个关键词新建 SEO 站点”的研究判断 Hermes skill。
+
+**适合场景**
+
+- 用 SERP 证据辅助判断关键词是否值得建站。
+- 从需求价值、可赢性、产品契合、资产复利和商业模式门槛等角度做评分。
+- 为新的 SEO 站点实验提供更结构化的关键词研究报告。
+
+**注意边界**
+
+它优先使用 DataForSEO 等付费/官方 SERP 数据源，不用于直接抓取实时 Google SERP。
+
+**地址**
+
+[Alex-giao/seo-keyword-research](https://github.com/Alex-giao/seo-keyword-research)
+
+**收录版本**
+
+[`93edbfc`](https://github.com/Alex-giao/seo-keyword-research/commit/93edbfceb908009692cb46ba6cc9fbb8daed34bc)
+
+---
+
+### `web-access`
+
+> 面向 web search、页面提取、浏览器自动化和 Chrome CDP 代理选择的 Hermes skill。
+
+**适合场景**
+
+- 判断任务应该用搜索、网页正文提取、浏览器自动化，还是共享 Chrome CDP 代理。
+- 使用 Chrome 远程调试做需要真实浏览器状态的网页访问任务。
+- 管理任务专属标签页，减少对用户已有浏览器标签页的干扰。
+
+**注意边界**
+
+默认不操作用户已有标签页；涉及登录站点、敏感账号或自动化敏感页面时需要更谨慎。
+
+**地址**
+
+[Alex-giao/web-access](https://github.com/Alex-giao/web-access)
+
+**收录版本**
+
+[`1b3a5e6`](https://github.com/Alex-giao/web-access/commit/1b3a5e63bb0b27c491e3947f8c9e6dfb26208210)
+
+---
+
+### `wechat-mp-article-list`
+
+> 面向微信公众号后台文章列表提取的 Hermes skill。
+
+**适合场景**
+
+- 用户手动登录微信公众平台后台后，提取公众号文章列表。
+- 基于官方后台 UI 和网络响应做文章列表整理。
+- 需要保留人工扫码、登录授权和限速处理边界的采集流程。
+
+**注意边界**
+
+不包含账号凭证、Cookie、Token、登录会话或已导出的文章数据；不绕过微信平台控制。
+
+**地址**
+
+[Alex-giao/wechat-mp-article-list](https://github.com/Alex-giao/wechat-mp-article-list)
+
+**收录版本**
+
+[`b96b28e`](https://github.com/Alex-giao/wechat-mp-article-list/commit/b96b28e8429be594749072c21a1faa56f7c7fe45)
+
+---
+
 ## Add A New Skill
 
 新增 skill 时，建议保持这个格式：
 
 ```markdown
-| `skill-name` | 一句话说清它解决什么问题 | [owner/repo](https://github.com/owner/repo) |
+| `skill-name` | 一句话说清它解决什么问题 | [owner/repo](https://github.com/owner/repo) | [`commit`](https://github.com/owner/repo/commit/commit-hash) |
 ```
 
 如果需要更详细的说明，可以继续在 `Skill Cards` 里补充：
@@ -111,6 +186,10 @@
 **地址**
 
 [owner/repo](https://github.com/owner/repo)
+
+**收录版本**
+
+[`commit`](https://github.com/owner/repo/commit/commit-hash)
 ```
 
 ---
