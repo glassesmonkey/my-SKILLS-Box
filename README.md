@@ -29,6 +29,7 @@
 | --- | --- | --- |
 | `seo-code-diagnostic` | 网站 SEO、技术 SEO、AdSense 审核相关的代码诊断 | [glassesmonkey/seo-code-diagnostic](https://github.com/glassesmonkey/seo-code-diagnostic) |
 | `ga4-gsc-growth-analysis` | 基于 GA4 / GSC 数据做增长分析、流量诊断和优化建议 | [Alex-giao/ga4-gsc-growth-analysis](https://github.com/Alex-giao/ga4-gsc-growth-analysis) |
+| `new-keyword-opportunity-evaluator` | 高召回评估新发现/上升趋势关键词的早期 SEO 机会 | [Alex-giao/new-keyword-opportunity-evaluator](https://github.com/Alex-giao/new-keyword-opportunity-evaluator) |
 
 ---
 
@@ -66,6 +67,26 @@
 
 ---
 
+### `new-keyword-opportunity-evaluator`
+
+> 面向新增关键词、上升趋势关键词和 Cloudflare D1 候选词的机会评估 Hermes skill。
+
+**适合场景**
+
+- 快速筛选新发现或正在上升的关键词机会。
+- 判断关键词是否适合做工具页、可玩页面、数据库、模板、指南或对比类 MVP。
+- 做 24-72 小时 SEO / site experiment 的早期机会评估。
+
+**注意边界**
+
+它更适合做高召回的机会初筛，不适合作为最终 SERP 竞争难度判断。
+
+**地址**
+
+[Alex-giao/new-keyword-opportunity-evaluator](https://github.com/Alex-giao/new-keyword-opportunity-evaluator)
+
+---
+
 ## Add A New Skill
 
 新增 skill 时，建议保持这个格式：
@@ -99,4 +120,3 @@
 - 新增 skill 时，优先补充到 `Skill Index`。
 - 如果某个 skill 已经不维护，建议标注状态，而不是直接删除。
 - 描述要写“它能帮我解决什么问题”，不要只写技术名词。
-
