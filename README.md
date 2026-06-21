@@ -33,6 +33,7 @@
 | `seo-keyword-research` | 判断关键词是否值得围绕它新建 SEO 站点 | [Alex-giao/seo-keyword-research](https://github.com/Alex-giao/seo-keyword-research) | [`93edbfc`](https://github.com/Alex-giao/seo-keyword-research/commit/93edbfceb908009692cb46ba6cc9fbb8daed34bc) |
 | `web-access` | 在搜索、页面提取、浏览器自动化和 Chrome CDP 代理之间选择 web access 方案 | [Alex-giao/web-access](https://github.com/Alex-giao/web-access) | [`1b3a5e6`](https://github.com/Alex-giao/web-access/commit/1b3a5e63bb0b27c491e3947f8c9e6dfb26208210) |
 | `wechat-mp-article-list` | 手动登录微信公众平台后台后提取公众号文章列表 | [Alex-giao/wechat-mp-article-list](https://github.com/Alex-giao/wechat-mp-article-list) | [`b96b28e`](https://github.com/Alex-giao/wechat-mp-article-list/commit/b96b28e8429be594749072c21a1faa56f7c7fe45) |
+| `ultragoal` | 设计、对齐和激活可恢复的 Codex 持久目标 | [glassesmonkey/ultragoal](https://github.com/glassesmonkey/ultragoal) | [`58e1d6e`](https://github.com/glassesmonkey/ultragoal/commit/58e1d6e684f50a37c4bff1c321fbcd82bcfb2032) |
 
 ---
 
@@ -159,6 +160,30 @@
 **收录版本**
 
 [`b96b28e`](https://github.com/Alex-giao/wechat-mp-article-list/commit/b96b28e8429be594749072c21a1faa56f7c7fe45)
+
+---
+
+### `ultragoal`
+
+> 面向 Codex 持久目标设计、对齐和激活的 skill。
+
+**适合场景**
+
+- 把长期、多轮或需要恢复的任务设计成可验证的 Codex goal。
+- 在创建 goal 前对齐目标、成功标准、non-goals、审批边界和完成证明。
+- 为长反馈周期任务设计 verifier、迭代 loop、durable state 和 blocker 标准。
+
+**注意边界**
+
+不适合一次性、偏审美或缺少可信 verifier 的普通任务；默认先做 Grill-Ultragoal alignment，确认后才激活。
+
+**地址**
+
+[glassesmonkey/ultragoal](https://github.com/glassesmonkey/ultragoal)
+
+**收录版本**
+
+[`58e1d6e`](https://github.com/glassesmonkey/ultragoal/commit/58e1d6e684f50a37c4bff1c321fbcd82bcfb2032)
 
 ---
 
