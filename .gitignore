@@ -1,0 +1,17 @@
+*
+!.gitignore
+!web-reader/
+!web-reader/**
+!web-search/
+!web-search/**
+!semrush-authority-misrank-miner/
+!semrush-authority-misrank-miner/**
+
+# Vendored dependencies stay local and should not be tracked.
+web-reader/.DS_Store
+web-reader/vendor/
+web-search/vendor/
+
+# Python generated files should not be versioned.
+**/__pycache__/
+*.pyc
