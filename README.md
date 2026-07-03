@@ -31,6 +31,7 @@
 | `ga4-gsc-growth-analysis` | 基于 GA4 / GSC 数据做增长分析、流量诊断和优化建议 | [Alex-giao/ga4-gsc-growth-analysis](https://github.com/Alex-giao/ga4-gsc-growth-analysis) | - |
 | `new-keyword-opportunity-evaluator` | 高召回评估新发现/上升趋势关键词的早期 SEO 机会 | [Alex-giao/new-keyword-opportunity-evaluator](https://github.com/Alex-giao/new-keyword-opportunity-evaluator) | - |
 | `seo-keyword-research` | 判断关键词是否值得围绕它新建 SEO 站点 | [Alex-giao/seo-keyword-research](https://github.com/Alex-giao/seo-keyword-research) | [`93edbfc`](https://github.com/Alex-giao/seo-keyword-research/commit/93edbfceb908009692cb46ba6cc9fbb8daed34bc) |
+| `semrush-authority-misrank-miner` | 用 SEMrush 反查大站误排关键词，筛选非纯内容站机会 | [glassesmonkey/semrush-authority-misrank-miner](https://github.com/glassesmonkey/semrush-authority-misrank-miner) | [`fef0b7e`](https://github.com/glassesmonkey/semrush-authority-misrank-miner/commit/fef0b7e9f0df5a8e815ef8c193d56a4bd74c481a) |
 | `web-access` | 在搜索、页面提取、浏览器自动化和 Chrome CDP 代理之间选择 web access 方案 | [Alex-giao/web-access](https://github.com/Alex-giao/web-access) | [`1b3a5e6`](https://github.com/Alex-giao/web-access/commit/1b3a5e63bb0b27c491e3947f8c9e6dfb26208210) |
 | `wechat-mp-article-list` | 手动登录微信公众平台后台后提取公众号文章列表 | [Alex-giao/wechat-mp-article-list](https://github.com/Alex-giao/wechat-mp-article-list) | [`b96b28e`](https://github.com/Alex-giao/wechat-mp-article-list/commit/b96b28e8429be594749072c21a1faa56f7c7fe45) |
 | `ultragoal` | 设计、对齐和激活可恢复的 Codex 持久目标 | [glassesmonkey/ultragoal](https://github.com/glassesmonkey/ultragoal) | [`58e1d6e`](https://github.com/glassesmonkey/ultragoal/commit/58e1d6e684f50a37c4bff1c321fbcd82bcfb2032) |
@@ -112,6 +113,31 @@
 **收录版本**
 
 [`93edbfc`](https://github.com/Alex-giao/seo-keyword-research/commit/93edbfceb908009692cb46ba6cc9fbb8daed34bc)
+
+---
+
+### `semrush-authority-misrank-miner`
+
+> 面向 SEMrush 大站反查的高权重站误排挖词 skill。
+
+**适合场景**
+
+- 批量反查 Reddit、YouTube、Spotify、Wiki、Fandom 等高权重站的自然排名关键词。
+- 找出 Google 可能用视频、论坛、百科、音乐页等结果“凑”出来的关键词。
+- 按非纯内容站形态筛选在线工具、任务流程、可玩体验、训练计划、素材库、配置决策等机会。
+- 输出每个域名单独的 P0/P1/P2 SERP 复核词簇报告。
+
+**注意边界**
+
+V1 不自动抓 Google SERP；它输出的是待人工 SERP 复核的候选池。筛选阶段默认只让模型看到关键词，避免 KD、CPC、流量等指标影响意图判断。
+
+**地址**
+
+[glassesmonkey/semrush-authority-misrank-miner](https://github.com/glassesmonkey/semrush-authority-misrank-miner)
+
+**收录版本**
+
+[`fef0b7e`](https://github.com/glassesmonkey/semrush-authority-misrank-miner/commit/fef0b7e9f0df5a8e815ef8c193d56a4bd74c481a)
 
 ---
 
